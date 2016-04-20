@@ -1,0 +1,111 @@
+body {
+font-family: "Lato", sans-serif;
+font-weight: 300;
+margin: 0;
+width: 100%;
+height: 100%;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #777;
+  display: inline-block;
+  margin-left: 1px; }
+  a:hover {
+    color: #000;
+    border-color: #000; }
+
+header {
+  margin-top: 30px;
+  text-align: center;
+}
+header h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+header h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+article {
+  width: 100%;
+  margin: auto; }
+
+
+figure figcaption p{
+  font-weight: lighter;
+  margin: auto;
+  margin-top: 20%;
+}
+
+section {
+  margin: 80px auto; }
+
+figure  {
+  margin: 0;
+  padding: 0 50px;
+  height: 400px;
+  position: relative;
+}
+
+@-webkit-keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  figure .image {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    float: left;
+    -webkit-animation: mymove 1s;
+    animation: mymove 1s;
+}
+
+@-webkit-keyframes mymove {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+figure figcaption {
+  float: right;
+  display: block;
+  width: 600px;
+  height: 400px;
+  line-height: 3;
+  -webkit-animation: mymove 1s;
+  animation: mymove 1s;
+}
+
+footer {
+  text-align: center;
+  border-top: 0.5px solid #999;
+  margin: 0 30px;
+  font-style: normal;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: grey;}
+
+@media (max-width: 960px) {
+  figure {
+    padding: 0;
+  }
+
+  figure .image {
+    position: static;
+    width: 100%;
+    margin: 0;
+    transform: none;
+  }
+
+  figure figcaption {
+    padding: 10px;
+    margin: auto;
+    display: block;
+    overflow: hidden;
+  }
+
+}
